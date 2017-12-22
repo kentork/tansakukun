@@ -324,10 +324,7 @@ namespace TansakuKun
 
       var parent = _directories[frn];
       if (parent.ParentFrn == 0) return drive;
-      if (parent.Path != "")
-      {
-        return string.Concat(parent.Path, Path.DirectorySeparatorChar, parent.Name);
-      }
+      if (parent.Path != "") return parent.Path;
 
       parent.Path = string.Concat(FrnToParentDirectory(drive, parent.ParentFrn), Path.DirectorySeparatorChar, parent.Name);
       return parent.Path;
