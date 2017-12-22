@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NEST" Version="6.0.0-beta1" />
+    <PackageReference Include="Elasticsearch.Net" Version="6.0.0-beta1" />
+    <PackageReference Include="YamlDotNet" Version="4.2.3" />
+  </ItemGroup>
+</Project>

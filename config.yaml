@@ -1,0 +1,6 @@
+target: "C:"
+
+elasticsearch:
+  host: localhost
+  port: 9200
+  chunk: 20000
